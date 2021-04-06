@@ -1,135 +1,335 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenZone</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
-    <div class="header">
-        <div class="container">
-
-            <div class="navbar">
-                <div class="logo">
-                    <!----  <img src="" width="250px">--->
-                    <img src="Images/5eef51d469f35_thumb900.jpg" width="250px">
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li>
-                            <a href="">Products</a>
-                        </li>
-                        <li><a href="">About</a></li>
-                        <li>
-                            <a href="">Contact</a>
-                        </li>
-                        <li><a href="">Account</a></li>
-                    </ul>
-                </nav>
-                <img src="Images/cart.png" width="30px" height="30px">
-            </div>
-            <div class="row">
+   
+   <div class="header">
+       <div class="container">
+          <div class="navbar">
+              <div class="logo">
+                  <a href="index.html"><img src="Images/logo.ico" width="125px"></a>
+              </div>
+              <nav>
+               <ul id="MenuItems">
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="products.html">Products</a></li>
+                   <li><a href="">About</a></li>
+                   <li><a href="">Contact</a></li>
+                   <li><a href="account.html">Account</a></li>
+               </ul>
+              </nav>
+              <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+              <img src="images/menu.png" onclick="menutoggle()" class="menu-icon">
+          </div>
+           <div class="row">
                 <div class="col-2">
+
                     <h1>
                         The Key to<br> Green surroundings <br>is in your hands </h1>
-                    <p>
+                        <p>
 
-                        Being environmentally aware is something we can all start at a young age and can actively put
-                        into practice on a day to day basis. Whether that be recycling your everyday waste,or using
-                        products which are made from sustainable materials or planting trees..
-                    </p>
-                    <a href="" class="btn">Explore Now &#8594;</a>
+                            Being environmentally aware is something we can all start at a young age and can actively put
+                            into practice on a day to day basis. Whether that be recycling your everyday waste,or using
+                            products which are made from sustainable materials or planting trees..
+                        </p>
+                    <a href="#" class="btn">Explore Now &#8594;</a>
                 </div>
                 <div class="col-2">
-                    <img src="Images/image1.jpg" alt="">
+                    <img src="images/image1.jpg">
                 </div>
+               
+           </div>
+           
+       </div>
+       </div>
+<!------------------ featured categories --------------->
+     <div class="categories">
+         <div class="small-container">
+           <div class="row">
+               <div class="col-3">
+                   <img src="images/cat-1.jpg">
+               </div> 
+               <div class="col-3">
+                  <img src="images/cat-2.jpg">
+               </div> 
+               <div class="col-3">
+                   <img src="images/cat-3.jpg">
+               </div> 
+           </div>
+       </div>
+     </div>
+       
+<!-------------- Our Featured Products -------------->
+  
+  
+  <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+           <div class="row">
+               <div class="col-4">
+                   
+                   <a href="product-details.html"><img src="images/Products/Anthurium red plant Rs 645.jpeg"></a>
+                   <h4><a href="product-details.html">Anthurium red plant</a></h4>
+                   <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-o"></i>
+                   </div>
+                   <p>rs 650.00</p>
+               </div> 
+               <div class="col-4">
+                <img src="images/Products/Spathiphyllum Sensation ( Peace Lily ) plant   Rs 325.jpeg" alt="">
+                <h4>Spathiphyllum Sensation plant </h4>
+                <div class="Rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 325</p>
+
+            </div>
+            <div class="col-4">
+                <img src="images/Products/Aglaonema Red plant    Rs395.jpeg" alt="">
+                <h4>Aglaonema Red plant</h4>
+                <div class="Rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+
+                </div>
+                <p>Rs395</p>
+            </div>
+            <div class="col-4">
+                <img src="images/Products/Chlorophytum Spider plant   Rs275.jpeg" alt="">
+                <h4>Chlorophytum Spider plant</h4>
+                <div class="Rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+
+                </div>
+                <p>Rs275</p>
+            </div>           </div>
+        <h2 class="title">Latest Products</h2>
+             <div class="row">
+               <div class="col-4">
+                   <img src="images/Images/Product_1.jpeg">
+                   <h4>Anthurium red plant</h4>
+                   <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-o"></i>
+                   </div>
+                   <p>RS 325.00</p>
+               </div> 
+               <div class="col-4">
+                   <img src="images/Images/Product_2.jpeg">
+                   <h4>Aglaonema Red plant</h4>
+                   <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-half-o"></i>
+                   </div>
+                   <p>$55.00</p>
+               </div> 
+               <div class="col-4">
+                   <img src="images/Images/Product_3.jpeg">
+                   <h4>Spathiphyllum Sensation </h4>
+                   <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-half-o"></i>
+                   </div>
+                   <p>Rs 325.00</p> 
+               </div> 
+                <div class="col-4">
+                   <img src="images/Images/Product_4.jpeg">
+                   <h4>Chlorophytum Spider plant</h4>
+                   <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-o"></i>
+                   </div>
+                   <p>Rs 274.00</p>
+               </div> 
+           </div>
+           <div class="row">
+               <div class="col-4">
+                   <img src="images/Images/Product_5.jpeg">
+                   <h4>Christmas Cactus plant</h4>
+                   <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-o"></i>
+                   </div>
+                   <p>Rs 365.00</p> 
+               </div> 
+
+                
+           </div>
+       </div>
+       
+<!----------offer--------------->
+  
+   <div class="offer">
+       <div class="small-container">
+           <div class="row">
+           <div class="col-2">
+               <img src="images/Products/Adenium white double petal (Grafted) -Desert rose flower plant.  Rs 649.jpeg" class="offer-img">
+           </div>
+           <div class="col-2">
+               <p>Exclusively Available on GreenZone</p>
+               <h1>Adenium white double petal</h1>
+               <small>Adenium white double petal (Grafted) -Desert rose flower plant a very beautifull and
+                rich in colour can be a very attractive decoration to house
+            </small>
+               <br>
+               <a href="#" class="btn">Buy Now &#8594;</a>
+           </div>
+       </div>
+       </div>
+       
+   </div>
+   
+<!----------testimonial--------------->   
+  
+   <div class="testimonial">
+       <div class="small-container">
+       <div class="row">
+           <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                      <p>This is Great Site nice products are avalible</p>
+                      <div class="rating">
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star-o"></i>
+                       </div>
+                       <img src="images/user-1.png">
+                       <h3>Sean Parker</h3>
+           </div>
+            <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                      <p>The Products nice better and cheap</p>
+                      <div class="rating">
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star-o"></i>
+                       </div>
+                       <img src="images/user-2.png">
+                       <h3>Mike Smith</h3>
+           </div>
+            <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                      <p>Now i can shop plants from home</p>
+                      <div class="rating">
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star-o"></i>
+                       </div>
+                       <img src="images/user-3.png">
+                       <h3>Mabel Joe</h3>
+           </div>
+       </div>
+       </div>
+   </div>
+
+<!----------Footer---------------> 
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col1">
+               <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col2">
+               <img src="images/logo.ico">
+                <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+            </div>
+            <div class="footer-col3">
+               <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col4">
+               <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter<li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
             </div>
         </div>
+        <hr>
+        <p class="copyright">Copyright 2020 - Saac</p>
     </div>
-    <!--------Featured categories------------->
-    <div class="categories">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-3">
-                    <img src="images/cat-1.jpg" alt="">
-                </div>
-                <div class="col-3">
-                    <img src="images/cat-2.jpg" alt="">
-                </div>
-                <div class="col-3">
-                    <img src="images/cat-3.jpg" alt="">
-                </div>
-                <div class="col-3">
-                    <img src="images/cat-4.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
+    
+</div>
 
-    <!--------Featured products------------->
-    <div class="small-container">
-        <h2>
-            <div class="row">
-                <div class="col-4">
-                    <img src="images/Products/Anthurium red plant Rs 645.jpeg" alt="">
-                    <p>Anthurium red plant Rs 645</p>
-                </div>
-                <div class="col-4">
-                    <img src="images/Products/Aglaonema Red plant    Rs395.jpeg" alt="">
-                    <p>Aglaonema Red plant    Rs395</p>
-                </div>
-                <div class="col-4">
-                    <img src="images/Products/Amaryllis Lily Dutch plant  Rs329.jpeg" alt="">
-                    <p>Amaryllis Lily Dutch plant  Rs329</p>
-                </div>
-                <div class="col-4">
-                    <img src="images/Products/Adenium white double petal (Grafted) -Desert rose flower plant Rs 649.jpeg" alt="">
-                    <p>Adenium white double petal (Grafted) -Desert rose flower plant Rs 649</p>
-                </div>
-                <div class="col-4">
-                    <img src="images/Products/Bougainvillea Dwarf pink - Bougainvillea Glabra pink  Rs 399.jpeg" alt="">
-                    <p>Bougainvillea Dwarf pink - Bougainvillea Glabra pink  Rs 399</p>
-                </div>
-                <div class="col-4">
-                    <img src="images/Products/Buddelia Fragrant plant - Butterfly bush Rs 299.jpeg" alt="">
-                    <p>Buddelia Fragrant plant - Butterfly bush Rs 299</p>
-                </div>
-                <div class="col-4">
-                    <img src="images/Products/Chlorophytum Spider plant   Rs275.jpeg" alt="">
-                    <p>Chlorophytum Spider plant   Rs275.jpeg</p>
-                </div>
 
-                <div class="col-4">
-                    <img src="images/Products/Christmas  Cactus plant  Rs 325.jpeg" alt="">
-                    <p>Christmas  Cactus plant  Rs 325</p>
-                </div>
-                <div class="col-4">
-                    <img src="images/Products/Climbing Rose (Creeper) Pink plant Rs 499.jpeg" alt="">
-                    <p>Climbing Rose (Creeper) Pink plant Rs 499</p>
-                </div>
-                <div class="col-4">
-                    <img src="images/Products/Kalanchoe Orange plant   Rs 375.jpeg" alt="">
-                    <p>Kalanchoe Orange plant   Rs 375</p>
-                </div>
-                <div class="col-4">
-                    <img src="images/Products/Spathiphyllum Sensation ( Peace Lily ) plant   Rs 325.jpeg" alt="">
-                    <p>Spathiphyllum Sensation ( Peace Lily ) plant   Rs 325</p>
-                </div>
 
-            </div>
-        </h2>
-    </div>
+<!-------------js for toggle menu-------------->
 
-    <script src="script.js">
-    </script>
+<script>
+    
+    var MenuItems = document.getElementById("MenuItems");
+    
+    MenuItems.style.maxHeight = "0px";
+    
+    function menutoggle()
+    {
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }else
+            {
+                MenuItems.style.maxHeight = "0px"
+            } 
+    }
+    
+</script>
+
+
+
 </body>
-
 </html>
+
